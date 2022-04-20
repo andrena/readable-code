@@ -18,4 +18,6 @@ public class SwapTest {
 		//assertThat(pair.left()).isEqualTo("");
 		//assertThat(pair.right()).isEqualTo("");
 	}
+
+	//and how would it have been if swap was named foo?
 }

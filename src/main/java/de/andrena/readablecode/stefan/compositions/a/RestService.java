@@ -2,14 +2,16 @@ package de.andrena.readablecode.stefan.compositions.a;
 
 public class RestService {
 
-	private AuthenticationService auth;
-	private RequestExtractor requests;
-	private DiscountSevice discounting;
-	private PricingSevice pricing;
-	private ConsumerTaxingService consumerTaxing;
-	private SpecialTaxingService specialTaxing;
-	private ResponseFactory response;
-
+	/** Magic Complexity = 1 (this class) */
+	private AuthenticationService auth;              // +1
+	private RequestExtractor requests;               // +1
+	private DiscountSevice discounting;              // +1
+	private PricingSevice pricing;                   // +1
+	private ConsumerTaxingService consumerTaxing;    // +1
+	private SpecialTaxingService specialTaxing;      // +1
+	private ResponseFactory response;                // +1
+	/**                                               = 8*/
+	
 	/**
 	 * which dependency is to be applied in which sequence?
 	 * do you remember all 5 dependencies?

@@ -2,10 +2,12 @@ package de.andrena.readablecode.stefan.compositions.b;
 
 public class RestService {
 
-	private PricingSevice pricing;
-	private TaxingService taxing;
-	private ResponseFactory response;
-
+	/** Magic Complexity = 1 (this class) */
+	private PricingSevice pricing;    //+1
+	private TaxingService taxing;     //+1
+	private ResponseFactory response; //+1
+	/**                                = 4*/
+	
 	/**
 	 * pricing -> taxing -> responding
 	 */
