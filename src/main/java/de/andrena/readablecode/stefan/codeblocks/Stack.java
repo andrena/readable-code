@@ -1,26 +1,29 @@
-package de.andrena.readablecode.stefan.codeblocks.a;
+package de.andrena.readablecode.stefan.codeblocks;
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
 
-public class Interpreter {
-
-	private List<Object> stack;
-
-	public Interpreter() {
+public class Stack {
+	
+	private LinkedList<Object> stack;
+	
+	public Stack() {
 		stack = new LinkedList<>();
 	}
-
+	
 	public void push(Object o) {
-		stack.add(o);
+		stack.push(o);
 	}
-
+	
 	public Object pop() {
-		return stack.remove(stack.size() - 1);
+		return stack.pop();
 	}
 
 	public void swap() {
+		swap1();
+	}
+
+	public void swap2() {
 		/** Magic Complexity =                                                     0 */
 		ListIterator<Object> it = stack.listIterator(stack.size());              //+1
 		Object current = null;                                                   //+1
@@ -36,5 +39,15 @@ public class Interpreter {
 		stack.set(stack.size() - 1, next);                                       //+1
 		/**                                                                        10*/
 	}
+
+	public void swap1() {
+		/** Magic Complexity =           0 */
+		Object top = stack.pop();      //+1
+		Object belowTop = stack.pop(); //+1
+		stack.push(top);               //+1
+		stack.push(belowTop);          //+1
+		/**                              4*/
+	}
+
 
 }

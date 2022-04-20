@@ -12,6 +12,6 @@ public class Product {
 	public int available;            //+1
 	public List<String> comments;    //+1
 	public List<Integer> stars;      //+1
-	/**                                4 */
+	/**                                7 */
 
 }

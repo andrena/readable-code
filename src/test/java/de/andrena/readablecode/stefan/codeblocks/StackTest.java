@@ -1,14 +1,16 @@
-package de.andrena.readablecode.stefan.codeblocks.a;
+package de.andrena.readablecode.stefan.codeblocks;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-public class InterpreterTest {
+import de.andrena.readablecode.stefan.codeblocks.Stack;
+
+public class StackTest {
 
 	@Test
 	void testSwap() {
-		Interpreter interpreter = new Interpreter();
+		Stack interpreter = new Stack();
 		interpreter.push("A");
 		interpreter.push("B");
 		
