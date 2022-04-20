@@ -2,6 +2,8 @@ package de.andrena.readablecode.stefan.compositions.a;
 
 public class RestService {
 
+	private AuthenticationService auth;
+	private RequestExtractor requests;
 	private DiscountSevice discounting;
 	private PricingSevice pricing;
 	private ConsumerTaxingService consumerTaxing;
@@ -14,9 +16,9 @@ public class RestService {
 	 */
 	public Response generateOffer(Request req) {
 		try {
-			checkAuthorization(req);
-			int amount = req.amount();
-			String item = req.item();
+			auth.checkAuthorization(req);
+			int amount = requests.extractAmount(req);
+			String item = requests.extractItem(req);
 			Price price = pricing.computePrice(item, amount);
 			price = discounting.applyDiscounts(item, amount, price);
 			price = specialTaxing.applyTaxes(item, amount, price);
@@ -28,7 +30,4 @@ public class RestService {
 
 	}
 
-	private void checkAuthorization(Request req) throws AuthorizationException {
-		// some code
-	}
 }
