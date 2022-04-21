@@ -1,6 +1,7 @@
-package de.andrena.readablecode.stefan.teaser;
+package de.andrena.readablecode.teaser;
 
 
+@SuppressWarnings("unused")
 public class Adder {
 
 	public static void main(String[] args) {
@@ -22,9 +23,9 @@ public class Adder {
 		// 20
 		// 321
 
-		//System.out.println(x); 
-		//System.out.println(y); 
-		//System.out.println(z);
+		//System.out.println(x); //what do you expect?
+		//System.out.println(y); //what do you expect?
+		//System.out.println(z); //what do you expect?
 	}
 
 }
