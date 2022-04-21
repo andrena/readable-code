@@ -1,10 +1,8 @@
-package de.andrena.readablecode.stefan.codeblocks;
+package de.andrena.readablecode.codeblocks;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
-
-import de.andrena.readablecode.stefan.codeblocks.Stack;
 
 public class StackTest {
 

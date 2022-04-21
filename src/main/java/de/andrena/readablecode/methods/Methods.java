@@ -1,8 +1,8 @@
-package de.andrena.readablecode.peter;
+package de.andrena.readablecode.methods;
 
-public class Magic4Examples_MethodParameters {
+public class Methods {
     /**
-     * Recommended by Robert C. Martin ("Clean Code")
+     * Two chunks (this,bestIsNoParameters) = Recommended by Robert C. Martin ("Clean Code")
      */
     public void bestIsNoParameters() {
         // 1 Fact for this
@@ -10,7 +10,7 @@ public class Magic4Examples_MethodParameters {
     }
 
     /**
-     * Still easy to remember.
+     * Three chunks (this, oneParameter, parameter1) = Still easy to remember.
      */
     public void oneParameter(String parameter1) {
         System.out.println(parameter1);
@@ -18,7 +18,7 @@ public class Magic4Examples_MethodParameters {
     }
 
     /**
-     * Can handle that, too.
+     * Four chunks (this, twoParameter, parameter1, parameter2) = Can handle that, too.
      */
     public void twoParameters(String parameter1, boolean parameter2) {
         System.out.println(parameter1);
@@ -27,7 +27,7 @@ public class Magic4Examples_MethodParameters {
     }
 
     /**
-     * It gets harder...
+     * Five chunks (this, twoParameter, parameter1, parameter2, parameter3) = It gets harder... we feel the limit
      */
     public void threeParameters(String parameter1, boolean parameter2, int parameter3) {
         System.out.println(parameter1);
@@ -37,7 +37,7 @@ public class Magic4Examples_MethodParameters {
     }
 
     /**
-     * Okay, I'm confused.
+     * Six chunks (...) = I'm confused.
      */
     public void fourParameters(String parameter1, boolean parameter2, int parameter3, double parameter4) {
         System.out.println(parameter1);
@@ -48,7 +48,7 @@ public class Magic4Examples_MethodParameters {
     }
 
     /**
-     * Too much!
+     * Seven chunks (...) = Too much!
      */
     public void fiveParameters(String parameter1, boolean parameter2, int parameter3, double parameter4, String parameter5) {
         System.out.println(parameter1);
@@ -59,17 +59,17 @@ public class Magic4Examples_MethodParameters {
         // ...
     }
 
-    private void usages() {
+    public void usages() {
         this.bestIsNoParameters();
 
-        this.oneParameter("https://someurl.com");
+        this.oneParameter("https://easy-to-recall.com");
 
-        this.twoParameters("https://someurl.com", false);
+        this.twoParameters("https://still-easy-to-recall.com", false);
 
-        this.threeParameters("https://someurl.com", false, 42);
+        this.threeParameters("https://ok-to-recall.com", false, 42);
 
-        this.fourParameters("https://someurl.com", false, 42, 3.141);
+        this.fourParameters("https://hard-to-recall.com", false, 42, 3.141);
 
-        this.fiveParameters("https://someurl.com", false, 42, 3.141, "Too much!");
+        this.fiveParameters("https://only-trained-recall-this.com", false, 42, 3.141, "Too much!");
     }
 }

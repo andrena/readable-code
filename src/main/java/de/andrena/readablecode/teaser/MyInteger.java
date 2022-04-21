@@ -12,13 +12,13 @@ public class MyInteger {
 	}
 
 	public MyInteger add2(MyInteger that) {
-		that.value += this.value;
-		return that;
+		this.value += that.value;
+		return this;
 	}
 
 	public MyInteger add3(MyInteger that) {
-		this.value += that.value;
-		return this;
+		that.value += this.value;
+		return that;
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class MyInteger {
 	}
 
 	public MyInteger add(MyInteger that) {
-		return add2(that);
+		return add3(that);
 	}
 	
 	
