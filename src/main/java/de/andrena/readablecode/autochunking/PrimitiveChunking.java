@@ -1,7 +1,15 @@
 package de.andrena.readablecode.autochunking;
 
-public class AutoChunking {
+public class PrimitiveChunking {
     
+	public static final int NUMBER = 8142;                      //4 chunks, recallable
+	public static final String A_NUMBER = "0163897742";         //10 chunks, not recallable
+	public static final String B_NUMBER = "0163-89 77 42";      //4 chunks, we use telephone number idiom, recallable
+
+	public static final String CHARACTERS ="CFEG";              //4 chunks, recallable
+	public static final String MANY_CHARACTERS = "GNUHCSARREBÜ";//12 chunks, not ecallable
+	public static final String SAME_CHARACTERS = "ÜBERRASCHUNG";//1 chunk, we use german language, recallable
+	
 	/**
      * 12 chunks?
      * 
