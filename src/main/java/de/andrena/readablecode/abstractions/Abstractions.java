@@ -1,5 +1,5 @@
 package de.andrena.readablecode.abstractions;
 
-public class Todo {
-
+public class Abstractions {
+	//TODO
 }
