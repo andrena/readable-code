@@ -13,7 +13,7 @@ public class MisleadingChunks {
 		final MyInteger z = new MyInteger(300);
 		
 		MyInteger sumXY = x.add(y);             // we see the chunk sumXY = 1 + 20
-		                                        // but beyond our knowledge there is y = 1 + 20 
+		                                        // but beyond our knowledge there is y = 1 + 20
 
 		MyInteger sumXYZ = z.add(y);            // we see the chunk sumXYZ = 300 + 20 
 		                                        // and are surprised by sumXYZ = 300 + 20 + 1 (because y = 1 + 20 instead y = 20)

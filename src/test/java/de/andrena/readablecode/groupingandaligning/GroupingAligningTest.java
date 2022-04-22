@@ -16,10 +16,10 @@ public class GroupingAligningTest {
 		MyObject myObject815 = new MyObject();
 		myObject815.setValue(815);
 
-		groupingAligning. swap(myObject42, myObject815);
-		
-		assertThat(myObject42.value()).isEqualTo(815); 
-		assertThat(myObject815.value()).isEqualTo(42); 
+		groupingAligning.swap(myObject42, myObject815);
+
+		assertThat(myObject42.value()).isEqualTo(815);
+		assertThat(myObject815.value()).isEqualTo(42);
 	}
 
 }
