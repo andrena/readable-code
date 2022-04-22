@@ -4,23 +4,61 @@ import java.util.List;
 
 public class Naming {
 	public static class FromSpringData {
-		/** two chunks (find id) = ok*/
-		public Entry findById(long messageId) {
+		/** 
+		 * findBy       = 0 (trivial)
+		 * id           = +1
+		 * total chunks = 1 (ok)
+		 */
+		public Entry findById(long id) {
+			return null;
+		}
+		
+        /**
+		 * findBy       = 0 (trivial)
+		 * operator &   = +1
+		 * id           = +1
+		 * language     = +1
+		 * total chunks = 3 (ok)
+		 */
+		public Entry findByIdAndLang(long id, String language) {
 			return null;
 		}
 
-		/** four chunks (find id & lang) = ok*/
-		public Entry findByIdAndLang(long messageId, String language) {
+        /**
+		 * findBy       = 0 (trivial)
+		 * operator &   = +1
+		 * id           = +1
+		 * lang         = +1
+		 * collection   = +1
+		 * total chunks = 4 (ok)
+		 */
+		public Entry findByIdAndLangAndCollection(long id, String language,String collection) {
 			return null;
 		}
 
-		/** six chunks (find id & lang & collection) = not recallable*/
-		public Entry findByIdAndLangAndCollection(long messageId, String language,String collection) {
+        /**
+		 * findBy       = 0 (trivial)
+		 * operator &   = +1
+		 * !id          = +2
+		 * lang         = +1
+		 * collection   = +1
+		 * total chunks = 5 (not recallable)
+		 */
+		public Entry findByIdNotAndLangAndCollection(long id, String language,String collection) {
 			return null;
 		}
 
-		/** twelve chunks (find id not & lang & collection & category and date before) = not readable*/
-		public Entry findByIdNotAndLangAndCollectionAndCategoryInAndDateBefore(long messageId, String language, String collection, List<String> categories, long page, long size) {
+        /**
+		 * findBy       = 0 (trivial)
+		 * operator &   = +1
+		 * !id          = +2
+		 * lang         = +1
+		 * collection   = +1
+		 * category     = +1
+		 * date before  = +2
+		 * total chunks = 8 (really not recallable)
+		 */
+		public Entry findByIdNotAndLangAndCollectionAndCategoryInAndDateBefore(long id, String language, String collection, List<String> categories, long page, long size) {
 			return null;
 		}
 	}

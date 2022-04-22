@@ -5,11 +5,22 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 1 implicit chunk given by the contract of the cart (sum of product prices = total, shipping = 0 if total > freeLimit)
+ * As class we have to adjust the chunk counting:
+ * - attribute products          +1
+ * - attribute buyDate           +1
+ * - attribute shipping          +1
+ * - attribute total             +1
+ * - contract of the class       +1
  * 
- * Objects that use the full power of OO get hard to read even if there are 4 chunks, because in every method we must keep the contract in mind
+ * total chunks                  5 (not easy to recall)
  * 
- * The contract needs one chunk because we just store the reference to the contract and usually do not check it simultaneously with writing a method body 
+ * Just using the attributes of a class does not involve the class contract (so there would be 4 chunks)
+ * But every method we call has to obey the contract (we have to keep the contract in mind, when using the attributes)
+ * We assume that this contract is available as one chunk (so there are 5 chunks)  
+ * 
+ * Note: The contract is not always explicit and often not even completely defined, in this case we can assume following:
+ * - sum of product prices = total 
+ * - shipping = 0 if total > FREE_LIMIT
  */
 @SuppressWarnings("unused")
 public class Cart1 {
