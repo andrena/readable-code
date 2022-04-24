@@ -1,4 +1,4 @@
-package de.andrena.readablecode.sideeffects;
+package de.andrena.readablecode.chunking;
 
 import de.andrena.readablecode.teaser.MyInteger;
 
@@ -25,7 +25,7 @@ public class SideEffects {
 	}
 	
 	/**
-	 * 3 chunks (mutableOO, this, a) 
+	 * 3  chunks (mutableOO, this, a) 
 	 * 1 chunk to keep in mind that this method changes the this object
 	 * 4 chunks = ok
 	 * 

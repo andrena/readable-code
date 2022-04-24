@@ -1,4 +1,4 @@
-package de.andrena.readablecode.autochunking;
+package de.andrena.readablecode.chunking;
 
 public class PrimitiveChunking {
     
