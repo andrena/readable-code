@@ -5,44 +5,44 @@ package de.andrena.readablecode.chunking;
  */
 public class SideEffects {
 	
-	private int scalingFactor;
+	private int unitSize;
 	
-	public SideEffects(int scalingFactor) {
-		this.scalingFactor = scalingFactor;
+	public SideEffects(int unitSize) {
+		this.unitSize = unitSize;
 	}
 	
-	public int scale(int i) {
-		return i * scalingFactor;
+	public int sizeOf(int i) {
+		return i * unitSize;
 	}
 
-	public int pureFunctional(int a, int b) {
+	public int add(int a, int b) {
 		return a + b;
 	}
 	
-	public int properOO(int a, int b) {
-		return (a + b)* this.scalingFactor;
+	public int addUnits(int a, int b) {
+		return (a + b)* this.unitSize;
 	}
 	
 	/**
 	 * Haskell does not allow this
 	 */
-	public void mutableOO(int a) {
-		this.scalingFactor = a;
+	public void setUnitSize(int a) {
+		this.unitSize = a;
 	}
 
 	/**
 	 * Rust/Haskell do not allow this
 	 */
-	public SideEffects complexMutableOO(SideEffects that) {
-		this.scalingFactor+= that.scalingFactor;
+	public SideEffects add(SideEffects that) {
+		this.unitSize+= that.unitSize;
 		return this;
 	}
 
 	/**
 	 * Rust/Haskell do not allow this
 	 */
-	public SideEffects unconventionalMutableOO(SideEffects that) {
-		that.scalingFactor+= this.scalingFactor;
+	public SideEffects plus(SideEffects that) {
+		that.unitSize+= this.unitSize;
 		return that;
 	}
 

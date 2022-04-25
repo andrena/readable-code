@@ -13,7 +13,7 @@ public class PrimitiveChunking {
 	/**
      * 13 chunks?
      * 
-     * No! 2 chunks (System.out.println, parameters[i])  
+     * No! 3 chunks (System.out.println, parameters[i], 13)  
      */
     public void autoChunking(String[] parameters) {
         System.out.println(parameters[0]);
