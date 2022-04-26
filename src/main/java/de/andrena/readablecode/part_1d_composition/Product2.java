@@ -1,4 +1,4 @@
-package de.andrena.readablecode.composition;
+package de.andrena.readablecode.part_1d_composition;
 
 import java.math.BigDecimal;
 import java.util.List;
