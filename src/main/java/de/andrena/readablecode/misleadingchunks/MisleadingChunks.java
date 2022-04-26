@@ -1,6 +1,6 @@
 package de.andrena.readablecode.misleadingchunks;
 
-import de.andrena.readablecode.teaser.MyInteger;
+import de.andrena.readablecode.part_0_teaser.MyInteger;
 
 public class MisleadingChunks {
 

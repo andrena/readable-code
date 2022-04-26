@@ -1,4 +1,4 @@
-package de.andrena.readablecode.teaser;
+package de.andrena.readablecode.part_0_teaser;
 
 public class MyInteger {
 	public int value;
