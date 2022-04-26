@@ -1,4 +1,4 @@
-package de.andrena.readablecode.naming;
+package de.andrena.readablecode.part_1a_naming;
 
 import java.util.List;
 

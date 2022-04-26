@@ -1,7 +1,7 @@
 package de.andrena.readablecode.abstractions;
 
 import de.andrena.readablecode.composition.Product1;
-import de.andrena.readablecode.naming.Naming;
+import de.andrena.readablecode.part_1a_naming.Naming;
 
 public class Abstractions {
 
