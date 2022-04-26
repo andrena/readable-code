@@ -1,10 +1,10 @@
-package de.andrena.readablecode.groupingandaligning;
+package de.andrena.readablecode.part_2c_groupingandaligning;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-import de.andrena.readablecode.groupingandaligning.GroupingAligning.MyObject;
+import de.andrena.readablecode.part_2c_groupingandaligning.GroupingAligning.MyObject;
 
 public class GroupingAligningTest {
 

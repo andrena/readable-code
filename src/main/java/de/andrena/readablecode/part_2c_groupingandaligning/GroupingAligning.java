@@ -1,4 +1,4 @@
-package de.andrena.readablecode.groupingandaligning;
+package de.andrena.readablecode.part_2c_groupingandaligning;
 
 import de.andrena.readablecode.part_1f_codeconventions.CodeConventions;
 
