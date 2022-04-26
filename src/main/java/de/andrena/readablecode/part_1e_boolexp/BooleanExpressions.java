@@ -1,4 +1,4 @@
-package de.andrena.readablecode.boolexp;
+package de.andrena.readablecode.part_1e_boolexp;
 
 public class BooleanExpressions {
 
