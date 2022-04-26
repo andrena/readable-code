@@ -1,4 +1,4 @@
-package de.andrena.readablecode.abstractions;
+package de.andrena.readablecode.part_2b_abstractions;
 
 import de.andrena.readablecode.part_1d_composition.Product1;
 import de.andrena.readablecode.part_1a_naming.Naming;
