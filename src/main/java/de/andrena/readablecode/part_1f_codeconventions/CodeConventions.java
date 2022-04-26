@@ -1,4 +1,4 @@
-package de.andrena.readablecode.codeconventions;
+package de.andrena.readablecode.part_1f_codeconventions;
 
 public class CodeConventions {
 

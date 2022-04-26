@@ -1,6 +1,6 @@
 package de.andrena.readablecode.groupingandaligning;
 
-import de.andrena.readablecode.codeconventions.CodeConventions;
+import de.andrena.readablecode.part_1f_codeconventions.CodeConventions;
 
 public class GroupingAligning {
 
