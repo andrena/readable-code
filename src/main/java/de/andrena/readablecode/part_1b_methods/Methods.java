@@ -27,7 +27,7 @@ public class Methods {
     }
 
     /**
-     * Five chunks (this, twoParameter, parameter1, parameter2, parameter3) = It gets harder... we feel the limit
+     * Five chunks (this, threeParameter, parameter1, parameter2, parameter3) = It gets harder... we feel the limit
      */
     public void threeParameters(String parameter1, boolean parameter2, int parameter3) {
         System.out.println(parameter1);

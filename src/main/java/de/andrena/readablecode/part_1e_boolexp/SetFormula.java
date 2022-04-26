@@ -37,7 +37,7 @@ public class SetFormula {
 		System.out.print("\t" + toString + " = ");
 		Set<String> test = formula.apply(arguments);
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}

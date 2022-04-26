@@ -35,7 +35,7 @@ public class Formula {
 		System.out.print("\t" + toString + " = ");
 		boolean test = formula.test(arguments);
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
