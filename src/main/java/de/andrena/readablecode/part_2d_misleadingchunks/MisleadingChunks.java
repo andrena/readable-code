@@ -1,4 +1,4 @@
-package de.andrena.readablecode.misleadingchunks;
+package de.andrena.readablecode.part_2d_misleadingchunks;
 
 import de.andrena.readablecode.part_0_teaser.MyInteger;
 
