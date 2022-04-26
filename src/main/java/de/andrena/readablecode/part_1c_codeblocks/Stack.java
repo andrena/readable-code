@@ -1,4 +1,4 @@
-package de.andrena.readablecode.codeblocks;
+package de.andrena.readablecode.part_1c_codeblocks;
 
 import java.util.LinkedList;
 import java.util.ListIterator;

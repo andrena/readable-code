@@ -1,4 +1,4 @@
-package de.andrena.readablecode.codeblocks;
+package de.andrena.readablecode.part_1c_codeblocks;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
