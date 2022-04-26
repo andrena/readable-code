@@ -1,4 +1,4 @@
-package de.andrena.readablecode.chunking;
+package de.andrena.readablecode.part_2a_chunking;
 
 /**
  * see tests
