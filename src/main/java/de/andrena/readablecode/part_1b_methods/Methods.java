@@ -1,4 +1,4 @@
-package de.andrena.readablecode.methods;
+package de.andrena.readablecode.part_1b_methods;
 
 public class Methods {
     /**
