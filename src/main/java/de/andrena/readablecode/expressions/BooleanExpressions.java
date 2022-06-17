@@ -17,8 +17,8 @@ public class BooleanExpressions {
 			"!A | B").evaluate(true, false);
 		System.out.println("\n was 4 chunks\n\n");
 
-		new Formula((a, b, c) -> a & b | !c,
-			"A & B | !C").evaluate(true, false, false);
+		new Formula((a, b, c) -> a | b & !c,
+			"A | B & !C").evaluate(true, false, false);
 		System.out.println("\n was 6 chunks (gets hard)\n\n");
 	}
 
